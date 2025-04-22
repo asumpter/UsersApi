@@ -1,1 +1,35 @@
+POST http://localhost:5000/api/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "password"
+}
+
+###
 GET http://localhost:5000/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJVc2VyIiwiZXhwIjoxNzQ1MzY1MDMwLCJpc3MiOiJodHRwczovL3lvdXJhcGkuY29tIiwiYXVkIjoiaHR0cHM6Ly95b3VyYXBpLmNvbSJ9.OH7VwdvjMSdUN9nIOEltOgmffR8F5KFfZWl7xv6qzP0
+Content-Type: application/json
+###
+POST http://localhost:5000/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJVc2VyIiwiZXhwIjoxNzQ1MzY1MDMwLCJpc3MiOiJodHRwczovL3lvdXJhcGkuY29tIiwiYXVkIjoiaHR0cHM6Ly95b3VyYXBpLmNvbSJ9.OH7VwdvjMSdUN9nIOEltOgmffR8F5KFfZWl7xv6qzP0
+Content-Type: application/json
+
+{
+  "name": "newuser",
+  "email": "newemail"
+}
+
+###
+PUT http://localhost:5000/api/users/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJVc2VyIiwiZXhwIjoxNzQ1MzY1MDMwLCJpc3MiOiJodHRwczovL3lvdXJhcGkuY29tIiwiYXVkIjoiaHR0cHM6Ly95b3VyYXBpLmNvbSJ9.OH7VwdvjMSdUN9nIOEltOgmffR8F5KFfZWl7xv6qzP0
+Content-Type: application/json
+
+{
+  "name": "updateduser",
+  "email": "updatedemail"
+}
+###
+DELETE http://localhost:5000/api/users/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJVc2VyIiwiZXhwIjoxNzQ1MzY1MDMwLCJpc3MiOiJodHRwczovL3lvdXJhcGkuY29tIiwiYXVkIjoiaHR0cHM6Ly95b3VyYXBpLmNvbSJ9.OH7VwdvjMSdUN9nIOEltOgmffR8F5KFfZWl7xv6qzP0
+Content-Type: application/json

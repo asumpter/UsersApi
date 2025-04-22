@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Authorization;
 
-[Authorize] // Requires authentication
+[AllowAnonymous]
 [ApiController]
 [Route("api/login")]
 public class LoginController : ControllerBase
@@ -16,7 +16,7 @@ public class LoginController : ControllerBase
     }
 
     [AllowAnonymous]
-    [HttpPost("login")]
+    [HttpPost("")]
     public IActionResult Login([FromBody] LoginRequest request)
     {
         if (request.Username == "admin" && request.Password == "password") // Validate credentials
