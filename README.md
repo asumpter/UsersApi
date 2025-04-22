@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Users API
 
 This project is an ASP.NET Core Web API for managing users. It provides endpoints to perform CRUD (Create, Read, Update, Delete) operations on user data.
@@ -64,3 +65,7 @@ UsersApi
 ## Usage
 
 You can use tools like Postman or curl to interact with the API endpoints. Make sure to set the appropriate HTTP method and headers (e.g., `Content-Type: application/json`) when making requests.
+=======
+# UsersApi
+Users API
+>>>>>>> 58320034b789e221502ad35e5308701783039d90
